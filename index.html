@@ -32,29 +32,11 @@
   </head>
 
   <body data-spy="scroll" data-offset="0" data-target="#theMenu">
-		
-	<!-- Menu -->
-	<nav class="menu" id="theMenu">
-		<div class="menu-wrap">
-			<h1 class="logo"><a href="index.html#home">Navigation</a></h1>
-			<i class="icon-remove menu-close"></i>
-			<a href="#home" class="smoothScroll">Home</a>
-			<a href="#about" class="smoothScroll">Über uns</a>
-			<a href="#portfolio" class="smoothScroll">Referenzen</a>
-			<a href="#contact" class="smoothScroll">Kontakt</a>
-			<a href="#"><i class="icon-facebook"></i></a>
-			<a href="#"><i class="icon-twitter"></i></a>
-			<a href="mailto:info@element-werk.de"><i class="icon-envelope"></i></a></a>
-		</div>
-		
-		<!-- Menu button -->
-		<div id="menuToggle"><i class="icon-reorder"></i></div>
-	</nav>
 
 
 	
-	<!-- ========== HEADER SECTION ========== -->
-	<section id="home" name="home"></section>
+	<!-- home section -->
+	<section id="home" name="home">
 	<div id="headerwrap">
 		<div class="container">
 			<div class="logo">
@@ -63,90 +45,137 @@
 			<br>
 			<div class="row">
 				<h1><span class="green">E</span>lement<span class="green">w</span>erk Ingenieure</h1>
-				<br>
-				<h3>die Experten für Feuchtigkeits- und Schimmelschäden.</h3>
+				<h3>die Experten für Feuchtigkeits- und Schimmelschäden</h3>
+				
 				<br>
 				<br>
 				<div class="col-lg-6 col-lg-offset-3">
+					<h3><a href="#contact" class="smoothScroll"><i class="icon-envelope"></i></a></h3>
 				</div>
 			</div>
 		</div><!-- /container -->
 	</div><!-- /headerwrap -->
-	
-	
-	
-	<!-- ========== ABOUT SECTION ========== -->
-	<section id="about" name="about"></section>
-	<div id="f">
-		<div class="container">
-			<div class="row">
-				<h3>Über uns</h3>
-				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
-				
-				<!-- INTRO INFORMATIO-->
-				<div class="col-lg-6 col-lg-offset-3">
-					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-				</div>								
+	</section>
+
+	<!-- contact section -->
+	<section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Kontakt &amp; Impressum</h2>
+                    
+                </div>
+            </div>
+            <div class="row">
+           
 			</div>
-		</div><!-- /container -->
-	</div><!-- /f -->
-	
-
-	<!-- ========== CAROUSEL SECTION ========== -->	
-	<section id="portfolio" name="portfolio"></section>
-	<div id="f">
-		<div class="container">
-			<div class="row centered">
-				<h3>Referenzen</h3>
-				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
-				
-				<div class="col-lg-6 col-lg-offset-3">
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-						<!-- Wrapper for slides -->
-						<div class="carousel-inner">
-							<div class="item active centered">
-								<img class="img-responsive" src="assets/img/c1.png" alt="">
-							</div>
-							<div class="item centered">
-								<img class="img-responsive" src="assets/img/c2.png" alt="">
-							</div>
-							<div class="item centered">
-								<img class="img-responsive" src="assets/img/c3.png" alt="">
-							</div>
-						</div>
-						<br>
-						<br>
-						<ol class="carousel-indicators">
-						    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-						    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-						    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-						</ol>
-					</div>
-				</div><!-- col-lg-8 -->
-			</div><!-- row -->
-		</div><!-- container -->
-	</div>	<!-- f -->
-
-	<!-- ========== CONTACT SECTION ========== -->
-	<section id="contact" name="contact"></section>
-	<div id="f">
-		<div class="container">
-			<div class="row">
-				<h3>Kontakt</h3>
-				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
-				
-				<div class="col-lg-6 col-lg-offset-3">
-					<p>Elementwerk Ingenieure<br />
-					Christian Gallitzendörfer<br />
+            <div class="row">
+                <div class="col-lg-12">
+                	<h3 class="app-heading">Wir freuen uns von Ihnen zu hören!</h3>
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="E-Mail *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Betreff *" id="subject" required data-validation-required-message="Please enter your subject.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Kommentare *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-6 col-lg-offset-6">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">SENDEN</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-right">
+                    <h3>Rechtliche Hinweise</h3>
+        
+                    <p class="text-muted">
+                    Christian Gallitzendörfer<br />
 					Kirchstr. 54<br/>
-						86415Mering <br/>
+						86415 Mering <br />
 						+49 (0)8233 84 999 32<br />
-						+49 (0)175 475 601 3</p>
-					<p><a href="mailto:info@element-werk.de">info@element-werk.de</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
+						+49 (0)175 475 601 3<br />
+						<a href="mailto:info@element-werk.de">info@element-werk.de</a></p>
+                </div>
+                <div class="col-md-6 text-left">
+                <h3>Elementwerk Ingenieure</h3>
+                    <p class="text-muted">
+                    Sitz und Registergericht Augsburg<br />
+
+					Ust.-ID-Nr.: DEXXXXXXXXX<br />
+
+					AGB (als pdf zum Download)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-right">
+                    <h3>Wichtiger Hinweis zu allen Links</h3>
+                    <p class="text-muted">Wir distanzieren uns hiermit ausdrücklich von allen Inhalten aller verlinkten Seiten auf unserer Homepage und machen uns diese Inhalte nicht zu eigen. Diese Erklärung gilt für alle auf dieser Website angebrachten Links.</p>
+                </div>
+                <div class="col-md-6 text-left">
+                    <h3>Haftungsausschluss</h3>
+                    <p class="text-muted">Die auf dieser Website bereitgestellten Informationen wurden gewissenhaft geprüft und werden bei Bedarf aktualisiert. Dennoch übernehmen wir keine Garantie dafür, dass alle Angaben zu jeder Zeit vollständig, richtig und von letzter Aktualität sind. Dies gilt auch und insbesondere für alle Verbindungen ("Links") zu anderen Websites, auf die direkt oder indirekt verwiesen wird. Wir behalten uns das Recht vor, alle Angaben ohne vorherige Ankündigung zu ergänzen, zu entfernen oder zu ändern.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-right">
+                    <h3>Urheber- und Kennzeichenrecht</h3>
+                    <p class="text-muted">Elementwerk ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Grafiken, Tondokumente, Videosequenzen und Texte zu beachten, von ihr selbst erstellte Grafiken, Tondokumente, Videosequenzen und Texte zu nutzen oder auf lizenzfreie Grafiken, Tondokumente, Videosequenzen und Texte zurückzugreifen. Alle innerhalb des Internetangebotes genannten und ggf. durch Dritte geschützten Marken- und Warenzeichen unterliegen uneingeschränkt den Bestimmungen des jeweils gültigen Kennzeichenrechts und den Besitzrechten der jeweiligen eingetragenen Eigentümer. Allein aufgrund der bloßen Nennung ist nicht der Schluss zu ziehen, dass Markenzeichen nicht durch Rechte Dritter geschützt sind! Das Copyright für veröffentlichte, von Elementwerk selbst erstellte Objekte bleibt allein bei Elementwerk. Eine Vervielfältigung oder Verwendung solcher Grafiken, Tondokumente, Videosequenzen und Texte in anderen elektronischen oder gedruckten Publikationen ist ohne ausdrückliche Zustimmung von Elementwerk nicht gestattet.</p>
+                </div>
+                <div class="col-md-6 text-left">
+                    <h3>Statistische Auswertungen mit PIWIK</h3>
+                    <p class="text-muted">Diese Website benutzt Piwik, eine Open-Source-Software zur statistischen Auswertung der Besucherzugriffe. Piwik verwendet sog. “Cookies”, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieses Internetangebotes werden auf dem Server des Anbieters in Deutschland gespeichert. Die IP-Adresse wird sofort nach der Verarbeitung und vor deren Speicherung anonymisiert. Sie können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich nutzen können.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-right">
+                    <h3>Salvatorische Klausel</h3>
+                    <p class="text-muted">Sofern Teile oder einzelne Formulierungen dieses Textes der geltenden Rechtslage nicht, nicht mehr oder nicht vollständig entsprechen sollten, bleiben die übrigen Teile des Dokumentes in ihrem Inhalt und ihrer Gültigkeit davon unberührt.</p>
+                </div>
+                
+                	<div class="col-md-6 text-left">
+                    <h3>Gestaltung, Umsetzung, Hosting</h3>
+                    <p class="text-muted">Kreativkombinat<br />
+                    
+                    Konrad-Adenauer-Allee 25<br />
+                    86150 Augsburg<br />
+                    Telefon: +49 (0) 821 444 12 69<br />
+                    Telefax: +49 (0) 821 440 13 10<br />
+                    <a href="http://kreativkombinat.de">http://kreativkombinat.de</a><br />
+                    <a href="mailto:info@kreativkombinat.de">info@kreativkombinat.de</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <span class="copyright">&copy; Elementwerk Ingenieure 2015</span> &middot;  <a class="page-scroll" href="#contact">Impressum</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 	
 

@@ -8,11 +8,11 @@
  */
 
 body {
-  background-color: #f2f2f2;
+  background-color: #1a1a1a;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 16px;
-    color: #555;
+    font-size: 20px;
+    color: #fff;
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -22,7 +22,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
-    color: #333;
+    color: #fff;
     text-transform: uppercase;
 }
 
@@ -39,7 +39,7 @@ p {
 
 /* Links */
 a {
-    color: #94c11a;
+    color: #10627a;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -76,7 +76,7 @@ a:after {
 
 
 /* ==========================================================================
-   Wrap Sections
+   Wrap s
    ========================================================================== */
 
 #headerwrap {
@@ -88,6 +88,7 @@ a:after {
 	background-position: center center;
 	min-height: 700px;
 	width: 100%;
+	margin-bottom: 300px;
 	
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -122,22 +123,18 @@ a:after {
 	color: white;
 	font-size: 16px;
 	font-weight: 100;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
 	#headerwrap h3 {
 	color: white;
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: 100;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
 	}
 }
 
 #headerwrap .logo {
-	width: 300px;
+	width: 100%;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -146,7 +143,7 @@ a:after {
 
 @media (min-width: 768px) {
 	#headerwrap .logo {
-	width: 300px;
+	width: 400px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -155,7 +152,7 @@ a:after {
 }
 
 .green {
-	color: #94c11a;
+	color: #10627a;
 }
 
 
@@ -228,7 +225,7 @@ a:after {
 }
 
 .menu h1.logo a:hover {
-	color: #94c11a;
+	color: #10627a;
 }
 
 .menu img.logo {
@@ -349,3 +346,79 @@ a:after {
 }
 
 
+#contact {
+  background: #1a1a1a;
+  margin-bottom: 40px;
+}
+
+.section-heading {
+	font-size: 80px;
+	text-align: center;
+}
+
+.app-heading {
+  color: white;
+  font-size: 50px;
+  font-weight: 200;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact .form-group {
+  margin-bottom: 25px;
+}
+#contact .form-group input,
+#contact .form-group textarea {
+  padding: 20px;
+}
+#contact .form-group input.form-control {
+  height: auto;
+}
+#contact .form-group textarea.form-control {
+  height: 236px;
+}
+#contact .form-control:focus {
+  border-color: #c1b384;
+  box-shadow: none;
+}
+#contact ::-webkit-input-placeholder {
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbbbbb;
+}
+#contact :-moz-placeholder {
+  /* Firefox 18- */
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbbbbb;
+}
+#contact ::-moz-placeholder {
+  /* Firefox 19+ */
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbbbbb;
+}
+#contact :-ms-input-placeholder {
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbbbbb;
+}
+#contact .text-danger {
+  color: #e74c3c;
+}
+
+.impressum {
+	margin-top: 500px;
+}
+
+footer {
+	margin-bottom: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
